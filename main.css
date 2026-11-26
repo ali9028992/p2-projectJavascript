@@ -1,34 +1,34 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-}
+
 
 body {
     background-color: #00a875;
     font-family: Arial, sans-serif;
-    padding: 18px 4px;
+    padding: 18px;
 }
 
 .navbar {
     background-color: #70cdb0;
-    height: 65px
-    height: 65px;
-    margin-left:200px ;
-    gap: 10px;
-    width: 1000px ;
-    border-radius:45px;
-    
-    padding: 10px 42px;
-    
+    min-height: 65px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 45px;
+    padding: 10px 25px;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
 
-   
+nav a {
+    color: white;
+    font-weight: bold;
 }
 
 .logo {
@@ -38,82 +38,177 @@ body {
     font-size: 20px;
     border-radius: 50px;
     padding: 8px 30px;
+    white-space: nowrap;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .nav-links {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
+    flex-wrap: wrap;
 }
 
 .nav-button {
     background-color: #00aa78;
     color: white;
     text-decoration: none;
-    font-size: 28px;
+    font-size: 20px;
     border-radius: 50px;
-    padding: 5px 26px;
-    min-width: 178px;
+    padding: 10px 20px;
     text-align: center;
 }
 
 .contact {
     background-color: #00563e;
     color: #70cdb0;
-    min-width: 232px;
-    flex-wrap: nowrap;
-    
-}
-.hoofd{ 
-    background-color: #70cdb0;
-    margin-top: 100px;
-    height: 200px;
-    width: 600px;
-    margin-left: 205px;
-    border-radius: 45px;
-    text-align: center;
+    min-width: 150px;
 }
 
-.text{
-    position: absolute;
-    justify-content: flex-start;
+.hoofd {
+    background-color: #70cdb0;
+    margin: 100px auto 0;
+    min-height: 200px;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 45px;
+    text-align: center;
+    padding: 25px;
+}
+
+.text {
     padding-left: 5px;
 }
-.anderehoofd{
+
+.anderehoofd {
     background-color: #70cdb0;
-    height: 240px;
-    width: 900px;
-    border-color: #00aa78;
+    min-height: 240px;
+    width: 100%;
+    max-width: 900px;
+    border: 3px solid #00aa78;
     border-radius: 45px;
     text-align: center;
-    margin-top: 100px;
-    margin-left: 205px;
-
+    margin: 100px auto 0;
+    padding: 20px;
 }
-table{
+
+table {
     color: black;
-    margin-left: 45px;
-    margin-top: 50px;
-    height: 220px;
+    margin: 30px auto;
+    min-height: 150px;
     background-color: #00563e;
-    width: 900px;
+    width: 100%;
+    border-collapse: collapse;
 }
 
-th{
+th, td {
     border: 3px solid black;
+    padding: 10px;
 }
-img{
-    margin-top: 100px;
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 30px;
+    border-radius: 35px;
 }
-.img2{
-    height: 300px;
+
+.img2 {
     width: 300px;
-    position: absolute;
+    max-width: 100%;
+    height: auto;
     display: block;
-    margin-left:auto ;
-    right: 13vw;
-    top: 2vh;
+    margin: 30px auto;
 }
-.a{
+
+.img34 {
+    margin-left: 20px;
+}
+
+.a {
     margin-top: 15px;
 }
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 12px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        border-radius: 25px;
+        padding: 15px;
+    }
+
+    .nav-links {
+        justify-content: center;
+    }
+
+    .nav-button {
+        font-size: 16px;
+        min-width: auto;
+    }
+
+    .hoofd,
+    .anderehoofd {
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    .img2 {
+        position: static;
+        margin: 30px auto;
+    }
+}
+
+@media (max-width: 480px) {
+
+    body {
+        padding: 8px;
+    }
+
+    .navbar {
+        gap: 12px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-button {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .hoofd,
+    .anderehoofd {
+        padding: 15px;
+        border-radius: 25px;
+        margin-top: 35px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 6px;
+    }
+
+    .img34 {
+        margin-left: 0;
+        
+    }
+}
+
+.fotop{
+    width: 100%;
+    height: 100%;
+}
+
